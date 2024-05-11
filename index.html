@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery IMG</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;"> Vintage Cars end Motocycles Exhibition </h1>
+
+<!--Imagens usadas para abrir a lightbox-->
+<div class="row">
+    <div class="column">
+      <img src="car6.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="car1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="car2.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="car3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="car4.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="car5.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="car7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="old_honda1.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="old_honda2.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="old_honda3.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="old_honda4.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="old_honda5.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 12</div>
+        <img src="car6.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 12</div>
+        <img src="car1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 12</div>
+        <img src="car2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 12</div>
+        <img src="car3.jpg" style="width:100%">
+      </div>
+      
+      
+      <div class="mySlides">
+        <div class="numbertext">5 / 12</div>
+        <img src="car4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 12</div>
+        <img src="car5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 12</div>
+        <img src="car7.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 12</div>
+        <img src="old_honda1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 12</div>
+        <img src="old_honda2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">10 / 7</div>
+        <img src="old_honda3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">11 / 12</div>
+        <img src="old_honda4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">12 / 12</div>
+        <img src="old_honda5.jpg" style="width:100%">
+      </div>
+
+    </div>
+
+      
+      <!-- Next/previous controls-->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      <!--Caption text-->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      
+      <!--Thumbnail image controls-->
+      <div class="column">
+        <img class="demo cursor" src="car6.jpg" style="width:100%" onclick="currentSlide(1)" alt="Mustang'S">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="car1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Dark Mustang">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="car2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Old Mustang">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="car3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Black Mustang">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="car4.jpg" style="width:100%" onclick="currentSlide(5)" alt="Blues Mustang">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="car5.jpg" style="width:100%" onclick="currentSlide(6)" alt="Silver Mustang">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="car7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Mustang">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="old_honda1.jpg" style="width:100%" onclick="currentSlide(8)" alt="Honda Motocycle">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="old_honda2.jpg" style="width:100%" onclick="currentSlide(9)" alt="Military Green Honda">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="old_honda3.jpg" style="width:100%" onclick="currentSlide(10)" alt="Silver Honda">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="old_honda4.jpg" style="width:100%" onclick="currentSlide(11)" alt="White Biz Honda">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="old_honda5.jpg" style="width:100%" onclick="currentSlide(12)" alt="White Honda">
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>
